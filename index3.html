@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body style="background-color: #222; color: lightgray">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+          <section class="mb-3 pb-2 border-bottom">
+            <h1 class="fs-6 text-lightgray mb-0">Edit Profile</h1>
+          </section>
+
+          <div class="d-flex flex-column flex-sm-row align-items-start gap-3 mt-3">
+            <div class="flex-shrink-0" style="margin-top: 10px">
+              <img
+                src="https://s3-eu-west-1.amazonaws.com/tpd/logos/62a6277627ee655c1226b624/0x0.png"
+                alt="Descrizione del luogo"
+                class="img-fluid rounded-4 shadow-sm"
+                style="height: 110px; width: auto"
+              />
+            </div>
+            <div class="flex-grow-1">
+              <div class="mb-2">
+                <label class="form-label fw-bold small text-lightgray" style="font-size: 0.75rem">Name</label>
+                <input
+                  type="text"
+                  id="nameInput"
+                  class="form-control form-control-sm rounded-0"
+                  value="Strive Student"
+                  style="width: 100%; max-width: 250px; height: 25px; font-size: 0.75rem; background-color: #333; color: lightgray"
+                />
+              </div>
+              <div class="mb-2">
+                <label class="form-label fw-bold small text-lightgray" style="font-size: 0.75rem">Language</label>
+                <select
+                  id="languageSelect"
+                  class="form-select form-select-sm rounded-0"
+                  style="width: 100%; max-width: 250px; height: 25px; font-size: 0.75rem; background-color: #333; color: lightgray"
+                >
+                  <option class="text-lightgray">Francese</option>
+                  <option class="text-lightgray">Tedesco</option>
+                  <option class="text-lightgray">Italiano</option>
+                </select>
+              </div>
+              <div class="mb-2">
+                <h2 class="text-lightgray" style="font-size: 0.75rem">Maturity Settings</h2>
+                <button class="btn btn-secondary btn-sm rounded-0 w-100" style="max-width: 250px; height: 25px; font-size: 0.75rem">
+                  All Maturity Ratings
+                </button>
+                <p class="small text-lightgray" style="font-size: 0.75rem">Show maturity titles</p>
+                <button class="btn btn-dark btn-sm rounded-0 w-100" style="max-width: 250px; height: 25px; font-size: 0.75rem">Edit</button>
+              </div>
+              <div>
+                <h2 class="text-lightgray" style="font-size: 0.75rem">Autoplay Controls</h2>
+                <div class="form-check mb-1">
+                  <input class="form-check-input rounded-0" type="checkbox" id="autoplayEp" />
+                  <label class="form-check-label small text-lightgray" style="font-size: 0.75rem">Autoplay next episode</label>
+                </div>
+                <div class="form-check mb-1">
+                  <input class="form-check-input rounded-0" type="checkbox" id="autoplayPrev" />
+                  <label class="form-check-label small text-lightgray" for="autoplayPrev" style="font-size: 0.75rem">Autoplay previews</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-sm-row justify-content-between gap-2 mt-3">
+            <button class="btn btn-dark btn-sm rounded-0 w-100" style="max-width: 250px; height: 25px; font-size: 0.65rem">Save</button>
+            <button class="btn btn-dark btn-sm rounded-0 w-100" style="max-width: 250px; height: 25px; font-size: 0.65rem">Cancel</button>
+            <button class="btn btn-dark btn-sm rounded-0 w-100" style="max-width: 250px; height: 25px; font-size: 0.65rem">Delete Profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
